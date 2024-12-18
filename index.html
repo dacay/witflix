@@ -2,10 +2,11 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WITFlix</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WITFlix</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 
 <body>
@@ -22,11 +23,40 @@
 
         <div class="search">
             <input type="search" placeholder="Search..." />
+            <i data-feather="bell" stroke="#1AA3F3"></i>
             <img src="https://i.pravatar.cc/40" />
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <div class="hero-content">
+            <h1 class="movie-title">Titanic</h1>
+            <div class="movie-metadata">
+                <div class="stars">
+                    <i data-feather="star" stroke="red" fill="red"></i>
+                    <i data-feather="star" stroke="red" fill="red"></i>
+                    <i data-feather="star" stroke="red" fill="red"></i>
+                    <i data-feather="star" stroke="red" fill="red"></i>
+                    <i data-feather="star" stroke="red"></i>
+                    <span class="movie-rating">7.9</span>
+                    <span class="movie-rating-source">IMDB</span>
+                </div>
+                <span class="movie-age-rating">12+</span>
+                <span class="movie-duration">3 h 14 min</span>
+            </div>
+            <p class="movie-description">
+                A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S.
+            </p>
+            <div class="movie-metadata-2">
+                <p><span class="heading">Starring: </span><span>Leonardo DiCaprio, Kate Winslet, Billy Zane</span></p>
+                <p><span class="heading">Genre: </span><span>Drama, Romance, Disaster</span></p>
+            </div>
+            <button class="movie-play">
+                <i data-feather="play" width="20" fill="white"></i>
+                Play Now
+            </button>
+        </div>
+    </main>
 
     <section class="popular"></section>
 
@@ -34,6 +64,9 @@
 
     <footer></footer>
 
+    <script>
+        feather.replace();
+    </script>
 </body>
 
 </html>
