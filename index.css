@@ -1,0 +1,32 @@
+body {
+    padding: 0.5rem;
+}
+
+header {
+    background-color: gray;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img.logo {
+    height: 5vh;
+}
+
+header div.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header div.search input {
+    width: 7rem;
+    height: 1.6rem;
+}
+
+header div.search img {
+    border-radius: 50%;
+}
